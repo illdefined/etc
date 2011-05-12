@@ -1,0 +1,6 @@
+setopt AUTO_CONTINUE
+setopt AUTO_RESUME
+setopt BG_NICE
+setopt CHECK_JOBS
+setopt HUP
+setopt NOTIFY
