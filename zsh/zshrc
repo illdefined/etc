@@ -24,5 +24,5 @@ source ~/etc/zsh/prompt
 autoload -U ~/etc/zsh/function/*(:t)
 
 # Set up suffix aliases
-for suffix ( ~/etc/zsh/suffix/[^_]* )
-	alias -s "${suffix:t}"="$(<${suffix})"
+for script ( ~/etc/zsh/suffix/* )
+	source "$script"

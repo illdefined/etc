@@ -1,0 +1,2 @@
+for suffix ( pdf ps )
+	alias -s $suffix=evince
