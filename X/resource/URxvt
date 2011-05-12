@@ -1,0 +1,13 @@
+URxvt.background: black
+URxvt.foreground: white
+URxvt.jumpScroll: true
+URxvt.skipScroll: true
+URxvt.transparent: true
+URxvt.fading: 10
+URxvt.shading: 10
+URxvt.font: xft:M+ 1MN:size=8, xft:Terminus:size=8
+URxvt.urgentOnBell: true
+URxvt.scrollBar: false
+URxvt.scrollTtyOutput: false
+URxvt.saveLines: 65535
+URxvt.pastableTabs: true
