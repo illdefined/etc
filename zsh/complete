@@ -1,3 +1,5 @@
+setopt GLOB_COMPLETE
+
 autoload -U compinit
 compinit
 
