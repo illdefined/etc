@@ -20,6 +20,10 @@ source ~/etc/zsh/history
 source ~/etc/zsh/jobctrl
 source ~/etc/zsh/prompt
 
+# Load modules
+for module ( cap files mathfunc system )
+	zmodload zsh/$module
+
 # Load functions
 autoload -U ~/etc/zsh/function/*(:t)
 
