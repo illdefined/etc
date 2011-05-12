@@ -9,5 +9,6 @@ font: xft:M+ 1MN:size=8, xft:Unifont:size=1
 urgentOnBell: true
 scrollBar: false
 scrollTtyOutput: false
+scrollTtyKeypress: true
 saveLines: 65535
 pastableTabs: true
