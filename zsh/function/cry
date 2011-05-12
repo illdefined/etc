@@ -1,0 +1,1 @@
+encfs -i 60 -o noatime,uid="$UID",gid="$GID" "$PWD/.$1" "$PWD/$1"
