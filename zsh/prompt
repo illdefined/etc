@@ -1,0 +1,7 @@
+function {
+	local base="%B%(?..%F{red}%? )%(!.%F{red}.%F{green})%n@%m %F{blue}%1~ "
+	local tail="%f%b "
+
+	PS1="${base}%#${tail}"
+	PS2="${base}>${tail}"
+}
