@@ -1,0 +1,26 @@
+setopt HASH_CMDS
+setopt RC_QUOTES
+setopt SHORT_LOOPS
+
+setopt C_BASES
+setopt FUNCTION_ARGZERO
+setopt LOCAL_OPTIONS
+setopt LOCAL_TRAPS
+setopt MULTIOS
+setopt TRAPS_ASYNC
+
+REPORTTIME=32
+
+watch=( notme )
+fpath+=( ~/etc/zsh/function )
+
+source ~/etc/zsh/history
+source ~/etc/zsh/jobctrl
+source ~/etc/zsh/prompt
+
+# Load functions
+autoload -U ~/etc/zsh/function/*(:t)
+
+# Set up suffix aliases
+for suffix ( ~/etc/zsh/suffix/[^_]* )
+	alias -s "${suffix:t}"="$(<${suffix})"
