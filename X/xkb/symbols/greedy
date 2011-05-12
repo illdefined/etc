@@ -1,63 +1,68 @@
 partial alphanumeric_keys
 xkb_symbols "greedy" {
+	name[Group1]= "Greedy";
 
-   name[Group1]= "Greedy";
+	// Modifier keys
+	include "ctrl(nocaps)"
+	include "altwin(alt_super_win)"
+	include "level3(menu_switch)"
+	include "level5(ralt_switch)"
 
-   key <TAB>  { [    Escape ] };
-   key <ESC>  { [       Tab ] };
-   key <CAPS> { [ Control_L ] };
-   modifier_map Control { <CAPS>, <LCTL> };
+	include "compose(102)"
+	include "nbsp(level3n)"
+	include "keypad(future)"
 
-   key <TLDE> { [    dollar, asciitilde,      EuroSign, dead_tilde ] };
-   key <AE01> { [ ampersand,    percent,    dead_breve, dead_caron ] };
-   key <AE02> { [ bracketleft,        7,     0x100201E,  0x100201A ] };
-   key <AE03> { [ braceleft,          5,     0x100201C,  0x1002018 ] };
-   key <AE04> { [ braceright,         3,     0x100201D,  0x1002019 ] };
-   key <AE05> { [ parenleft,          1,     0x1002039,   NoSymbol ] };
-   key <AE06> { [     equal,          9,     0x1002260,   NoSymbol ] };
-   key <AE07> { [  asterisk,          0,     0x10022C5,   NoSymbol ] };
-   key <AE08> { [ parenright,         2,     0x100203A,   NoSymbol ] };
-   key <AE09> { [      plus,          4,     plusminus,   NoSymbol ] };
-   key <AE10> { [ bracketright,       6,        endash,     emdash ] };
-   key <AE11> { [    exclam,          8,    exclamdown,   infinity ] };
-   key <AE12> { [ numbersign,     grave,    numerosign, dead_grave ] };
+	key <TAB>  { [    Escape ] };
+	key <ESC>  { [       Tab ] };
 
-   key <AD01> { [         k,          K,   odiaeresis,  Odiaeresis ] };
-   key <AD02> { [     comma,       less, dead_cedilla, guillemotleft ] };
-   key <AD03> { [         u,          U,       oacute,      Oacute ] };
-   key <AD04> { [         y,          Y,   udiaeresis,  Udiaeresis ] };
-   key <AD05> { [         p,          P,     NoSymbol,    NoSymbol ] };
-   key <AD06> { [         w,          W,     NoSymbol,    NoSymbol ] };
-   key <AD07> { [         l,          L,     NoSymbol,    NoSymbol ] };
-   key <AD08> { [         m,          M,           mu,    NoSymbol ] };
-   key <AD09> { [         f,          F,     NoSymbol,    NoSymbol ] };
-   key <AD10> { [         c,          C,    copyright,    NoSymbol ] };
-   key <AD11> { [     slash,   question,     division, questiondown ] };
-   key <AD12> { [        at, asciicircum,   0x100203D, dead_circumflex ] };
+	key <TLDE> { [    dollar, asciitilde,      EuroSign, dead_tilde ] };
+	key <AE01> { [ ampersand,    percent,    dead_breve, dead_caron ] };
+	key <AE02> { [ bracketleft,        7,     0x100201E,  0x100201A ] };
+	key <AE03> { [ braceleft,          5,     0x100201C,  0x1002018 ] };
+	key <AE04> { [ braceright,         3,     0x100201D,  0x1002019 ] };
+	key <AE05> { [ parenleft,          1,     0x1002039,   NoSymbol ] };
+	key <AE06> { [     equal,          9,     0x1002260,   NoSymbol ] };
+	key <AE07> { [  asterisk,          0,     0x10022C5,   NoSymbol ] };
+	key <AE08> { [ parenright,         2,     0x100203A,   NoSymbol ] };
+	key <AE09> { [      plus,          4,     plusminus,   NoSymbol ] };
+	key <AE10> { [ bracketright,       6,        endash,     emdash ] };
+	key <AE11> { [    exclam,          8,    exclamdown,   infinity ] };
+	key <AE12> { [ numbersign,     grave,    numerosign, dead_grave ] };
 
-   key <AC01>  { [         o,          O,      oacute,      Oacute ] };
-   key <AC02>  { [         a,          A,      aacute,      Aacute ] };
-   key <AC03>  { [         e,          E,      eacute,      Eacute ] };
-   key <AC04>  { [         i,          I,      iacute,      Iacute ] };
-   key <AC05>  { [         d,          D,         eth,         ETH ] };
-   key <AC06>  { [         r,          R,    NoSymbol,    NoSymbol ] };
-   key <AC07>  { [         n,          N,      ntilde,      Ntilde ] };
-   key <AC08>  { [         t,          T,       thorn,       Thorn ] };
-   key <AC09>  { [         h,          H,    NoSymbol,    NoSymbol ] };
-   key <AC10>  { [         s,          S,      ssharp,     section ] };
-   key <AC11>  { [     minus, underscore,   0x1002010, dead_macron ] };
-   key <BKSL>  { [ backslash,        bar,    NoSymbol,    NoSymbol ] };
+	key <AD01> { [         k,          K,   odiaeresis,  Odiaeresis ] };
+	key <AD02> { [     comma,       less, dead_cedilla, guillemotleft ] };
+	key <AD03> { [         u,          U,       oacute,      Oacute ] };
+	key <AD04> { [         y,          Y,   udiaeresis,  Udiaeresis ] };
+	key <AD05> { [         p,          P,     NoSymbol,    NoSymbol ] };
+	key <AD06> { [         w,          W,     NoSymbol,    NoSymbol ] };
+	key <AD07> { [         l,          L,     NoSymbol,    NoSymbol ] };
+	key <AD08> { [         m,          M,           mu,    NoSymbol ] };
+	key <AD09> { [         f,          F,     NoSymbol,    NoSymbol ] };
+	key <AD10> { [         c,          C,    copyright,    NoSymbol ] };
+	key <AD11> { [     slash,   question,     division, questiondown ] };
+	key <AD12> { [        at, asciicircum,   0x100203D, dead_circumflex ] };
 
-   key <AB01>  { [         q,          Q,  adiaeresis,  Adiaeresis ] };
-   key <AB02>  { [    period,    greater,    ellipsis, guillemotright ] };
-   key <AB03>  { [ apostrophe,  quotedbl,  dead_acute, dead_diaeresis ] };
-   key <AB04>  { [ semicolon,      colon, periodcentered, NoSymbol ] };
-   key <AB05>  { [         z,          Z,    NoSymbol,    NoSymbol ] };
-   key <AB06>  { [         x,          X,    multiply,    NoSymbol ] };
-   key <AB07>  { [         v,          V,    NoSymbol,    NoSymbol ] };
-   key <AB08>  { [         g,          G,    NoSymbol,    NoSymbol ] };
-   key <AB09>  { [         b,          B,    NoSymbol,    NoSymbol ] };
-   key <AB10>  { [         j,          J,    NoSymbol,    NoSymbol ] };
+	key <AC01>  { [         o,          O,      oacute,      Oacute ] };
+	key <AC02>  { [         a,          A,      aacute,      Aacute ] };
+	key <AC03>  { [         e,          E,      eacute,      Eacute ] };
+	key <AC04>  { [         i,          I,      iacute,      Iacute ] };
+	key <AC05>  { [         d,          D,         eth,         ETH ] };
+	key <AC06>  { [         r,          R,    NoSymbol,    NoSymbol ] };
+	key <AC07>  { [         n,          N,      ntilde,      Ntilde ] };
+	key <AC08>  { [         t,          T,       thorn,       Thorn ] };
+	key <AC09>  { [         h,          H,    NoSymbol,    NoSymbol ] };
+	key <AC10>  { [         s,          S,      ssharp,     section ] };
+	key <AC11>  { [     minus, underscore,   0x1002010, dead_macron ] };
+	key <BKSL>  { [ backslash,        bar,    NoSymbol,    NoSymbol ] };
 
-   include "level3(ralt_switch)"
+	key <AB01>  { [         q,          Q,  adiaeresis,  Adiaeresis ] };
+	key <AB02>  { [    period,    greater,    ellipsis, guillemotright ] };
+	key <AB03>  { [ apostrophe,  quotedbl,  dead_acute, dead_diaeresis ] };
+	key <AB04>  { [ semicolon,      colon, periodcentered, NoSymbol ] };
+	key <AB05>  { [         z,          Z,    NoSymbol,    NoSymbol ] };
+	key <AB06>  { [         x,          X,    multiply,    NoSymbol ] };
+	key <AB07>  { [         v,          V,    NoSymbol,    NoSymbol ] };
+	key <AB08>  { [         g,          G,    NoSymbol,    NoSymbol ] };
+	key <AB09>  { [         b,          B,    NoSymbol,    NoSymbol ] };
+	key <AB10>  { [         j,          J,    NoSymbol,    NoSymbol ] };
 };
