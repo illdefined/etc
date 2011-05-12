@@ -15,6 +15,7 @@ watch=( notme )
 fpath+=( ~/etc/zsh/function )
 
 source ~/etc/zsh/env
+source ~/etc/zsh/complete
 source ~/etc/zsh/history
 source ~/etc/zsh/jobctrl
 source ~/etc/zsh/prompt
