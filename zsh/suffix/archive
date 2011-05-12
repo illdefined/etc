@@ -1,0 +1,2 @@
+for suffix ( Z a bz2 cpio gz iso tar uu xar xz zip )
+	alias -s $suffix="bsdcpio -i -t -I"
