@@ -21,7 +21,7 @@ source ~/etc/zsh/jobctrl
 source ~/etc/zsh/prompt
 
 # Load modules
-for module ( cap files mathfunc system )
+for module ( cap files mathfunc system terminfo )
 	zmodload zsh/$module
 
 # Load functions
