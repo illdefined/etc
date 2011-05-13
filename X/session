@@ -22,4 +22,8 @@ have ssh-agent &&
 have gpg-agent &&
 	eval "$(gpg-agent --daemon)"
 
+# Set background image
+have feh &&
+	feh --bg-fill ~/lyapunov.png
+
 exec i3
