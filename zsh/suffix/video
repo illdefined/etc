@@ -1,2 +1,2 @@
 for suffix ( avi flv mkv mpeg mpg )
-	alias -s $suffix="cvlc --drawable-xid \"$WINDOWID\""
+	alias -s $suffix="cvlc --drawable-xid \"$WINDOWID\" --started-from-file"
