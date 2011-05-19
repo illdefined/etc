@@ -1,2 +1,2 @@
-for suffix ( avi flac flv mid{,i} mkv mp{3,4,eg,g} og{a,g,m,v} r{a,am,m} spx wav wm{a,v} wv )
+for suffix ( avi flac flv mid{,i} mk{a,v} mp{3,4,eg,g} og{a,g,m,v} r{a,am,m} spx wav wm{a,v} wv )
 	alias -s $suffix="cvlc --drawable-xid \"$WINDOWID\" --started-from-file"
