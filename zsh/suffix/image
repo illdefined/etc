@@ -1,2 +1,2 @@
-for suffix ( jpeg jpg png )
+for suffix ( bmp jp{e{,g},g} png tif{,f} )
 	alias -s $suffix="feh --no-menus --scale-down"
