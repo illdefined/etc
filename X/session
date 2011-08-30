@@ -14,13 +14,17 @@ find ~/etc/X/resource/ -type f -exec sh -c \
 have urxvtd &&
 	urxvtd -o -f
 
-# SSH agent
-have ssh-agent &&
-	eval "$(ssh-agent)"
+# SSH and GnuPG agents
+if have gnome-keyring-daemon
+then
+	export $(gnome-keyring-daemon --start --daemonize)
+else
+	have ssh-agent &&
+		eval "$(ssh-agent)"
 
-# GnuPG agent
-have gpg-agent &&
-	eval "$(gpg-agent --daemon)"
+	have gpg-agent &&
+		eval "$(gpg-agent --daemon)"
+fi
 
 # Set background image
 have feh &&
