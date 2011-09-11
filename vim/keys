@@ -1,0 +1,47 @@
+" Movement
+noremap r h
+noremap R H
+noremap n j
+noremap t k
+noremap h l
+noremap H L
+
+" Beginning of previous word
+noremap p b
+
+" End of word
+noremap l e
+noremap L E
+
+" Change one char
+noremap X s
+
+" Repeat search
+noremap ; n
+noremap : N
+
+" Paste
+noremap s p
+noremap S P
+
+" Join lines
+noremap N J
+
+" Change
+noremap e c
+noremap E C
+
+" Replace
+noremap z r
+noremap Z R
+
+" Inclusive jump
+noremap m f
+noremap M F
+
+" Exlusive jump
+noremap f t
+noremap F T
+
+" Command mode
+noremap - :

@@ -1,0 +1,25 @@
+" No Vi compatability
+set nocompatible
+
+" Unicode support
+set encoding=utf-8
+
+" Show special characters
+set list
+set listchars=tab:»·,trail:·,extends:…
+
+" Show line numbers and cursor position
+set number
+set ruler
+
+" Tab width
+set shiftwidth=4
+set tabstop=4
+
+" Enable syntax hilighting
+syntax on
+colorscheme inkpot
+
+autocmd FileType c,cpp	set cindent comments=sr:/*,mb:*,el:*/,://
+
+source ~/etc/vim/keys
