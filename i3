@@ -123,5 +123,6 @@ bindsym XF86AudioRaiseVolume exec /usr/bin/amixer sset PCM 2dB+
 # (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
 ipc-socket ~/.i3/ipc.sock
 
-# XXX: Automatically added a call to i3bar to provide a workspace bar
-exec i3status | i3bar -d
+bar {
+	status_command i3status
+}
