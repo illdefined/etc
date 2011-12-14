@@ -10,6 +10,10 @@ find ~/etc/X/resource/ -type f -exec sh -c \
 	'sed -r "s/[ \t]*([A-Za-z0-9_]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
 	| xrdb
 
+# ibus
+have ibus-daemon &&
+	ibus-daemon --daemonize
+
 # rxvt-unicode daemon
 have urxvtd &&
 	urxvtd -o -f
