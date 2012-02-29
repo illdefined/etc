@@ -8,6 +8,10 @@ if { have clang } {
 	export CC="clang"
 }
 
+if { have clang++ } {
+	export CXX="clang++"
+}
+
 if [[ -d ~/bin ]] {
 	path+=( ~/bin )
 }
