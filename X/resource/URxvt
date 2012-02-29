@@ -5,7 +5,7 @@ skipScroll: true
 transparent: true
 fading: 10
 shading: 10
-font: xft:M+ 1MN:size=8, xft:Unifont:size=1
+font: xft:M+ 1mn:size=8, xft:Unifont:size=8
 urgentOnBell: true
 scrollBar: false
 scrollTtyOutput: false
