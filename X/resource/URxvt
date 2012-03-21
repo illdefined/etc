@@ -10,5 +10,5 @@ urgentOnBell: true
 scrollBar: false
 scrollTtyOutput: false
 scrollTtyKeypress: true
-saveLines: 65535
+saveLines: 4096
 pastableTabs: true
