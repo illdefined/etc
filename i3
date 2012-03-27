@@ -97,7 +97,7 @@ bindcode Mod4+Shift+18 move workspace 9
 bindcode Mod4+Shift+19 move workspace 10
 
 # Mod4+Enter starts a new terminal
-bindcode Mod4+36 exec /usr/bin/urxvtc
+bindcode Mod4+36 exec /usr/bin/urxvt
 
 # Mod4+Shift+q kills the current client
 bindcode Mod4+Shift+24 kill
