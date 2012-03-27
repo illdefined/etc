@@ -12,6 +12,11 @@ if { have clang++ } {
 	export CXX="clang++"
 }
 
+if { have galette } {
+	export CC="galette ${CC}"
+	export CXX="galette ${CXX}"
+}
+
 if [[ -d ~/bin ]] {
 	path+=( ~/bin )
 }
