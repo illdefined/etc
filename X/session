@@ -14,10 +14,6 @@ find ~/etc/X/resource/ -type f -exec sh -c \
 have ibus-daemon &&
 	ibus-daemon --daemonize
 
-# rxvt-unicode daemon
-have urxvtd &&
-	urxvtd -o -f
-
 # SSH and GnuPG agents
 if have gnome-keyring-daemon
 then
