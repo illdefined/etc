@@ -3,7 +3,7 @@ have() {
 }
 
 # Set key map
-setxkbmap -print greedy | xkbcomp -I"${HOME}/etc/X/xkb" -w 3 - - | xkbcomp -w 3 - "${DISPLAY}"
+setxkbmap -print greedy | xkbcomp -I"${HOME}/etc/X/xkb" -w 3 -xkb - - | xkbcomp -w 3 - "${DISPLAY}"
 
 # Process X resources
 find ~/etc/X/resource/ -type f -exec sh -c \
