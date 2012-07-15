@@ -1,7 +1,16 @@
 bind index,pager A create-alias
-macro index,pager a "<save-message>+Archives<enter>"
 
-folder-hook . 'macro index,pager d "<save-message>+Trash<enter>"'
-folder-hook +Trash 'macro index,pager d <delete-message>'
+# Navigation
+bind index,pager n next-undeleted
+bind index,pager t previous-undeleted
+bind index,pager h next-unread
+
+# Message actions
+bind index,pager i flag-message
+
+# Trash and archives
+macro index,pager a "<save-message>+Archives<enter>" "archive message"
+folder-hook . 'macro index,pager d "<save-message>+Trash<enter>" "move message to trash"'
+folder-hook +Trash 'macro index,pager d <delete-message> "delete message"'
 
 # vim:ft=muttrc
