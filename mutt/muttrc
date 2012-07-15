@@ -1,0 +1,47 @@
+# Display
+set date_format = "%Y-%m-%d %H:%M:%S"
+set index_format = "%4C   %Z   %D  %20.20B    %40.40f   %s"
+set pager_index_lines = 8
+set pipe_decode = yes
+set reverse_alias
+set smart_wrap = yes
+set sort = threads
+set sort_aux = date
+
+# Actions
+set alias_file = "~/etc/mutt/aliases"
+set confirmappend = no
+set delete = yes
+set fast_reply = yes
+set include = yes
+set maildir_trash = yes
+set mime_forward = yes
+
+# Character set
+set assumed_charset = "utf-8"
+set attach_charset = "utf-8"
+set send_charset = "utf-8"
+
+# Message composition
+set abort_nosubject = no
+set abort_unmodified = no
+
+# Connection security
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
+# Message cryptography
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
+set crypt_replysign = yes
+set crypt_replysignencrypted = yes
+set crypt_use_gpgme = yes
+set pgp_auto_decode = yes
+set pgp_use_gpg_agent = yes
+
+source ~/etc/mutt/private
+source ~/etc/mutt/headers
+source ~/etc/mutt/folders
+source ~/etc/mutt/colours
+source ~/etc/mutt/binding
+source ~/etc/mutt/aliases

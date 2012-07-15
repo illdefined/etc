@@ -1,0 +1,11 @@
+ignore *
+unignore From Date Subject To Cc Reply-To
+unignore User-Agent
+unignore X-Original-To
+unignore Delivered-To
+unignore List-Id
+
+unhdr_order *
+hdr_order Date From Reply-To Listd-Id To X-Original-To Delivered-To Cc Subject User-Agent
+
+# vim:ft=muttrc
