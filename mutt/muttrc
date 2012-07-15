@@ -1,6 +1,7 @@
 # General
 set alias_file = "~/etc/mutt/aliases"
 set header_cache = "~/.mutt/cache"
+set sleep_time = 0
 
 # Display
 set assumed_charset = "utf-8"
