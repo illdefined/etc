@@ -1,4 +1,9 @@
+# General
+set alias_file = "~/etc/mutt/aliases"
+set header_cache = "~/.mutt/cache"
+
 # Display
+set assumed_charset = "utf-8"
 set date_format = "%Y-%m-%d %H:%M:%S"
 set index_format = "%4C   %Z   %D  %20.20B    %40.40f   %s"
 set pager_index_lines = 8
@@ -9,22 +14,17 @@ set sort = threads
 set sort_aux = date
 
 # Actions
-set alias_file = "~/etc/mutt/aliases"
 set confirmappend = no
 set delete = yes
-set fast_reply = yes
-set include = yes
-set maildir_trash = yes
-set mime_forward = yes
-
-# Character set
-set assumed_charset = "utf-8"
-set attach_charset = "utf-8"
-set send_charset = "utf-8"
 
 # Message composition
 set abort_nosubject = no
 set abort_unmodified = no
+set fast_reply = yes
+set include = yes
+set mime_forward = yes
+set attach_charset = "utf-8"
+set send_charset = "utf-8"
 
 # Connection security
 set ssl_force_tls = yes
