@@ -26,6 +26,10 @@ else
 		eval "$(gpg-agent --daemon)"
 fi
 
+# Composition manager
+have xcompmgr &&
+	xcompmgr -I 0.112 -O 0.12 -f -F &
+
 # Set background image
 have feh &&
 	feh --bg-fill ~/img/lyapunov.png
