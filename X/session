@@ -28,6 +28,6 @@ fi
 
 # Set background image
 have feh &&
-	feh --bg-fill ~/lyapunov.png
+	feh --bg-fill ~/img/lyapunov.png
 
 exec i3
