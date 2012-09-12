@@ -1,0 +1,31 @@
+general {
+	colors = true
+	interval = 5
+}
+
+order += "ipv6"
+order += "disk /"
+order += "battery 0"
+order += "load"
+order += "time"
+
+ipv6 {
+	format_up = " %ip "
+	format_down = " no IPv6 "
+}
+
+disk "/" {
+	format = " %avail "
+}
+
+battery 0 {
+	format = " %remaining "
+}
+
+load {
+	format = " %1min "
+}
+
+time {
+	format = " %Y-%m-%d %H:%M %Z "
+}
