@@ -1,5 +1,5 @@
 depth: 32
-background: [90]black
+background: [85]black
 foreground: white
 jumpScroll: true
 skipScroll: true
