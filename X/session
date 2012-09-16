@@ -10,6 +10,10 @@ find ~/etc/X/resource/ -type f -exec sh -c \
 	'sed -r "s/[ \t]*([A-Za-z0-9_]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
 	| xrdb
 
+# Lanuch dbus
+have dbus-launch &&
+	eval "$(dbus-launch --sh-syntax --exit-with-session)"
+
 # ibus
 have ibus-daemon &&
 	ibus-daemon --daemonize
