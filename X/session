@@ -14,6 +14,10 @@ find ~/etc/X/resource/ -type f -exec sh -c \
 have dbus-launch &&
 	eval "$(dbus-launch --sh-syntax --exit-with-session)"
 
+# NetworkManager applet
+have nm-applet &&
+	nm-applet &
+
 # ibus
 have ibus-daemon &&
 	ibus-daemon --daemonize
