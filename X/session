@@ -11,8 +11,10 @@ find ~/etc/X/resource/ -type f -exec sh -c \
 	| xrdb
 
 # Lanuch dbus
-have dbus-launch &&
-	eval "$(dbus-launch --sh-syntax --exit-with-session)"
+if have dbus-launch && [ -z "${DBUS_SESSION_BUS_ADDRESS}" ]
+then
+	eval "$(dbus-launch --sh-syntax)"
+fi
 
 # NetworkManager applet
 have nm-applet &&
