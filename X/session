@@ -25,16 +25,11 @@ have ibus-daemon &&
 	ibus-daemon --daemonize
 
 # SSH and GnuPG agents
-if have gnome-keyring-daemon
-then
-	export $(gnome-keyring-daemon --start --daemonize)
-else
-	have ssh-agent &&
-		eval "$(ssh-agent)"
+have ssh-agent &&
+	eval "$(ssh-agent)"
 
-	have gpg-agent &&
-		eval "$(gpg-agent --daemon)"
-fi
+have gpg-agent &&
+	eval "$(gpg-agent --daemon)"
 
 # Composition manager
 have xcompmgr &&
