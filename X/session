@@ -35,6 +35,10 @@ have gpg-agent &&
 have xcompmgr &&
 	xcompmgr -I 0.112 -O 0.12 -f -F &
 
+# Clipboard manager
+have parcellite
+	parcellite -d
+
 # Set background image
 have feh &&
 	feh --bg-fill ~/img/lyapunov.png
