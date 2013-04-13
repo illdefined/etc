@@ -37,7 +37,7 @@ have xcompmgr &&
 
 # Clipboard manager
 have parcellite
-	parcellite -d
+	parcellite &
 
 # Set background image
 have feh &&
