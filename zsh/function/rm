@@ -1,0 +1,1 @@
+command rm --interactive=once --one-file-system "$@"
