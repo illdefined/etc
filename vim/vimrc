@@ -4,22 +4,35 @@ set nocompatible
 " Unicode support
 set encoding=utf-8
 
-" Show special characters
+" Special characters
 set list
 set listchars=tab:»·,trail:·,extends:…
 
-" Show line numbers and cursor position
+" Line numbers and cursor position
 set number
 set ruler
 
-" Tab width
+" Text formatting
+set autoindent
+set noexpandtab
 set shiftwidth=4
 set tabstop=4
+set cinoptions=:0,g0,(1s
 
-" Enable syntax hilighting
+" Syntax hilighting
+set t_Co=256
 syntax on
 colorscheme inkpot
 
-autocmd FileType c,cpp	set cindent comments=sr:/*,mb:*,el:*/,://
+filetype plugin indent on
+
+" C/C++ specifics
+function s:C()
+	syn keyword cConstant nil
+	syn keyword cOperator constant expect likely unlikely offsetof
+	syn keyword cStorageClass nothrow pure perfect
+endfunction
+
+autocmd FileType c,cpp call s:C()
 
 source ~/etc/vim/keys
