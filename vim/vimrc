@@ -27,12 +27,6 @@ colorscheme inkpot
 filetype plugin indent on
 
 " C/C++ specifics
-function s:C()
-	syn keyword cConstant nil
-	syn keyword cOperator constant expect likely unlikely offsetof
-	syn keyword cStorageClass nothrow pure perfect
-endfunction
-
-autocmd FileType c,cpp call s:C()
+autocmd FileType c,cpp source ~/etc/vim/c
 
 source ~/etc/vim/keys

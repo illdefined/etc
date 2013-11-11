@@ -1,0 +1,19 @@
+" Constants
+syntax match cConstant /[A-Z][0-9A-Z_]\+/
+
+" Functions
+syntax match cFunction /\h\w*\ze\s*(/
+highlight link cFunction Function
+
+" Operators
+syntax match cOperator /[!%&*+,\-.:<=>?\[\]\^\|~]/
+syntax match cOperator /\/[^/*=]/me=e-1
+
+" Delimiters
+syntax match cDelimiter /[();{}]/
+highlight link cDelimiter Delimiter
+
+" defy macros
+syntax keyword cConstant nil
+syntax keyword cOperator constant expect likely unlikely offsetof
+syntax keyword cStorageClass nothrow pure perfect
