@@ -1,0 +1,1 @@
+command curl --location --remote-name "$@"
