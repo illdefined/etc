@@ -37,6 +37,10 @@ have xcompmgr &&
 
 # Set background image
 have feh &&
-	feh --bg-fill ~/img/lyapunov.png
+	feh --bg-fill ~/img/earthrise.jpeg
+
+# redshift
+have redshift &&
+	redshift &
 
 exec i3
