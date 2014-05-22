@@ -43,4 +43,8 @@ have feh &&
 have redshift &&
 	redshift &
 
+# calised
+have calised &&
+	calised &
+
 exec i3
