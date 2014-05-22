@@ -6,6 +6,7 @@ general {
 order += "ipv6"
 order += "disk /"
 order += "battery 0"
+order += "cpu_temperature 0"
 order += "load"
 order += "time"
 
@@ -20,6 +21,10 @@ disk "/" {
 
 battery 0 {
 	format = " %remaining "
+}
+
+cpu_temperature 0 {
+	format = " %degrees °C "
 }
 
 load {
