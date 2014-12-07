@@ -11,3 +11,7 @@ scrollTtyOutput: false
 scrollTtyKeypress: true
 saveLines: 4096
 pastableTabs: true
+perl-ext-common: default,matcher,confirm-paste
+url-launcher: /usr/bin/chromium-browser
+matcher.button: 1
+
