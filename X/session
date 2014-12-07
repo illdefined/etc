@@ -7,7 +7,7 @@ setxkbmap -print greedy | xkbcomp -I"${HOME}/etc/X/xkb" -w 3 -xkb - - | xkbcomp 
 
 # Process X resources
 find ~/etc/X/resource/ -type f -exec sh -c \
-	'sed -r "s/[ \t]*([A-Za-z0-9_]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
+	'sed -r "s/[ \t]*([A-Za-z0-9_.-]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
 	| xrdb
 
 # Lanuch dbus
