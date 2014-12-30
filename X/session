@@ -2,6 +2,9 @@ have() {
 	command -v "$1" >/dev/null
 }
 
+# Set key map
+setxkbmap -print greedy | xkbcomp -I"${HOME}/etc/X/xkb" -w 3 -xkb - - | xkbcomp -w 3 - "${DISPLAY}"
+
 # Process X resources
 find ~/etc/X/resource/ -type f -exec sh -c \
 	'sed -r "s/[ \t]*([A-Za-z0-9_.-]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
@@ -16,13 +19,6 @@ fi
 # NetworkManager applet
 have nm-applet &&
 	nm-applet &
-
-# ibus
-have ibus-daemon &&
-	ibus-daemon --daemonize
-
-# Set key map
-setxkbmap -print greedy | xkbcomp -I"${HOME}/etc/X/xkb" -w 3 -xkb - - | xkbcomp -w 3 - "${DISPLAY}"
 
 # SSH and GnuPG agents
 have ssh-agent &&
