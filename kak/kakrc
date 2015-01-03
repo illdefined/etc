@@ -12,12 +12,12 @@ map global normal <a-R> <a-H>
 map global normal <a-H> <a-L>
 
 # Word boundaries
-map global normal w w
-map global normal p b
-map global normal l e
-map global normal <a-w> <a-w>
-map global normal <a-p> <a-b>
-map global normal <a-l> <a-e>
+map global normal m w
+map global normal l b
+map global normal f e
+map global normal <a-m> <a-w>
+map global normal <a-l> <a-b>
+map global normal <a-f> <a-e>
 
 # Search
 map global normal ';' n
