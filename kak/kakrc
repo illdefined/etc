@@ -1,0 +1,56 @@
+# Command mode
+map global normal -- - :
+
+# Movement
+map global normal r h
+map global normal n j
+map global normal t k
+map global normal h l
+
+# Line selection
+map global normal <a-R> <a-H>
+map global normal <a-H> <a-L>
+
+# Word boundaries
+map global normal w w
+map global normal p b
+map global normal l e
+map global normal <a-w> <a-w>
+map global normal <a-p> <a-b>
+map global normal <a-l> <a-e>
+
+# Search
+map global normal ';' n
+map global normal : N
+map global normal '<a-;>' <a-n>
+map global normal <a-:> <a-N>
+
+# Paste
+map global normal s p
+map global normal S P
+map global normal <a-s> <a-p>
+map global normal <a-S> <a-P>
+map global normal c r
+map global normal C R
+
+# Join lines
+map global normal <a-n> <a-j>
+map global normal <a-N> <a-J>
+
+# Goto
+map global goto r h
+map global goto h l
+map global goto t k
+map global goto n j
+map global goto l t
+map global goto m c
+map global goto f b
+
+# View
+map global view m c
+map global view l t
+map global view f b
+map global view r h
+map global view n j
+map global view t k
+map global view h l
