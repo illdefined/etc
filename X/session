@@ -33,7 +33,7 @@ have xcompmgr &&
 
 # Set background image
 have feh &&
-	feh --bg-fill ~/img/earthrise.jpeg
+	feh --bg-fill ~/img/nighthawks.jpeg
 
 # redshift
 have redshift &&
