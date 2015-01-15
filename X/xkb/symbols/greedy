@@ -5,8 +5,7 @@ xkb_symbols "greedy" {
 	// Modifier keys
 	include "ctrl(nocaps)"
 	include "altwin(alt_super_win)"
-	include "level3(menu_switch)"
-	include "level5(ralt_switch)"
+	include "level3(ralt_switch)"
 
 	include "compose(102)"
 	include "keypad(future)"
