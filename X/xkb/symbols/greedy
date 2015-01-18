@@ -8,6 +8,7 @@ xkb_symbols "greedy" {
 	include "level3(ralt_switch)"
 
 	include "compose(102)"
+	include "nbsp(level3n)"
 	include "keypad(future)"
 
 	key <TAB>  { [    Escape ] };
@@ -63,5 +64,4 @@ xkb_symbols "greedy" {
 	key <AB08>  { [         g,          G,    NoSymbol,    NoSymbol ] };
 	key <AB09>  { [         b,          B,    NoSymbol,    NoSymbol ] };
 	key <AB10>  { [         j,          J,    NoSymbol,    NoSymbol ] };
-	key <SPCE>  { [     space, nobreakspace, 0x100202F,   0x1002060 ] };
 };
