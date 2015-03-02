@@ -29,7 +29,7 @@ have gpg-agent &&
 
 # Set background image
 have feh &&
-	feh --bg-fill ~/img/nighthawks.jpeg
+	feh --bg-fill ~/img/enginemaintenance.jpeg
 
 # redshift
 have redshift &&
