@@ -20,12 +20,9 @@ fi
 have nm-applet &&
 	nm-applet &
 
-# SSH and GnuPG agents
-have ssh-agent &&
-	eval "$(ssh-agent)"
-
+# GnuPG agent
 have gpg-agent &&
-	eval "$(gpg-agent --daemon)"
+	eval "$(gpg-agent --daemon --enable-ssh-support)"
 
 # Set background image
 have feh &&
