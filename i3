@@ -113,7 +113,7 @@ bindcode Mod4+Shift+26 exit
 bindcode Mod4+Shift+27 restart
 
 # Screen lock
-bindsym XF86ScreenSaver exec /usr/bin/i3lock -d -i ~/lyapunov.png
+bindsym XF86ScreenSaver exec /usr/bin/i3lock -d -i ~/img/nighthawks.jpeg
 
 # Volume control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2dB
