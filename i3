@@ -116,8 +116,9 @@ bindcode Mod4+Shift+27 restart
 bindsym XF86ScreenSaver exec /usr/bin/i3lock -d -i ~/lyapunov.png
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 -- +2dB
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -2dB
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2dB
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2dB
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # The IPC interface allows programs like an external workspace bar
 # (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
