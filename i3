@@ -1,4 +1,4 @@
-font -*-terminus-*-*-*-*-*-*-72-72-*-*-*-*
+font Pango:M+ 1mn 8
 
 # Use Mouse+Mod4 to drag floating windows to their wanted position
 floating_modifier Mod4
