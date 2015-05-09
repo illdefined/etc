@@ -26,6 +26,8 @@ autoload -U ~/etc/zsh/function/*(:t)
 for script ( ~/etc/zsh/suffix/* )
 	source "$script"
 
+
+source ~/etc/zsh/path
 source ~/etc/zsh/env
 source ~/etc/zsh/complete
 source ~/etc/zsh/history

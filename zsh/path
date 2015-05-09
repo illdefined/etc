@@ -1,0 +1,22 @@
+# Construct secure path
+path=(
+	# Only root‐writable directories in
+	# - /usr/local
+	# - /usr/host (for multiarch)
+	# - /usr/<host triplet> (for multiarch)
+	# - /usr
+	# - /
+	{/usr{/{local,host,*-*-*-*},},}/(|s)bin(NoN/u0^IW)
+
+	# Only user‐writable directories in user‘s home
+	~/bin(NoN/U^IW)
+)
+
+# Qualifiers used
+# N:  Do not report an error if there are no matches
+# oN: No sorting
+# /:  Match only directories
+# u0: Match only files owned by user ID 0 (root)
+# U:  Match only files owned by the effective user ID
+# ^I: Exclude group‐writable files
+# ^W: Exclude world‐writable files
