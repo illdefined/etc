@@ -8,7 +8,7 @@ path=(
 	# - /
 	{/usr{/{local,host,*-*-*-*},},}/(|s)bin(NoN/u0^IW)
 
-	# Only user‐writable directories in user‘s home
+	# Only user‐writable directories in user’s home
 	~/bin(NoN/U^IW)
 )
 
