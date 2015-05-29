@@ -19,6 +19,9 @@ set shiftwidth=4
 set tabstop=4
 set cinoptions=:0,g0,(1s
 
+" Rust
+let g:rust_recommended_style=0
+
 " Syntax hilighting
 set t_Co=256
 syntax on
