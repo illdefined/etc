@@ -1,4 +1,4 @@
-font Pango:M+ 1mn 8
+font pango:M+ 1mn 10
 
 # Use Mouse+Mod4 to drag floating windows to their wanted position
 floating_modifier Mod4
@@ -104,7 +104,7 @@ bindcode Mod4+Shift+24 kill
 
 # Mod4+v starts dmenu and launches the selected application
 # for now, we don’t have a launcher of our own.
-bindcode Mod4+55 exec /usr/bin/dmenu_run -i -fn "M+ 1MN-8"
+bindcode Mod4+55 exec /usr/bin/dmenu_run -i -fn "M+ 1MN-10"
 
 # Mod4+Shift+e exits i3
 bindcode Mod4+Shift+26 exit
@@ -113,12 +113,14 @@ bindcode Mod4+Shift+26 exit
 bindcode Mod4+Shift+27 restart
 
 # Screen lock
-bindsym XF86ScreenSaver exec /usr/bin/i3lock -d -i ~/img/nighthawks.jpeg
+bindsym XF86Display exec /usr/bin/i3lock -d -i ~/img/mildstedt.png
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2dB
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2dB
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +2dB
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -2dB
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute 2 toggle
+
 
 # The IPC interface allows programs like an external workspace bar
 # (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
