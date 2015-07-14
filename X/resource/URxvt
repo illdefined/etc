@@ -5,7 +5,7 @@ shading: 30
 jumpScroll: true
 skipScroll: true
 fading: 10
-font: xft:M+ 1mn:size=8, xft:Unifont:size=8
+font: xft:M+ 1mn:size=10, xft:Unifont:size=10
 urgentOnBell: true
 scrollBar: false
 scrollTtyOutput: false
