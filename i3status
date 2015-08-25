@@ -30,6 +30,7 @@ wireless wlp3s0 {
 }
 
 volume master {
+	device = "pulse:1"
 	format = "ﾠ🔊ﾠ%volume "
 	format_muted = "ﾠ🔇ﾠ%volume "
 }
@@ -58,6 +59,7 @@ cpu_temperature 0 {
 
 load {
 	format = "ﾠ🗠ﾠ%1min "
+	max_threshold = 4
 }
 
 time {
