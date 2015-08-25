@@ -39,14 +39,14 @@ disk "/" {
 }
 
 battery 0 {
-	format = "ﾠ%statusﾠ%percentage %remaining "
+	format = "ﾠ%statusﾠ%percentage %remaining %consumption "
 	status_chr = "🔌"
 	status_bat = "🔋"
 	status_full = "🔌"
 }
 
 battery 1 {
-	format = "ﾠ%statusﾠ%percentage %remaining "
+	format = "ﾠ%statusﾠ%percentage %remaining %consumption "
 	status_chr = "🔌"
 	status_bat = "🔋"
 	status_full = "🔌"
