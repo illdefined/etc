@@ -37,6 +37,7 @@ volume master {
 
 disk "/" {
 	format = "ﾠ🗁ﾠ%avail "
+	low_threshold = 5
 }
 
 battery 0 {
