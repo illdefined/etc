@@ -64,4 +64,9 @@ xkb_symbols "greedy" {
 	key <AB08>  { [         g,          G,    NoSymbol,    NoSymbol ] };
 	key <AB09>  { [         b,          B,    NoSymbol,    NoSymbol ] };
 	key <AB10>  { [         j,          J,    NoSymbol,    NoSymbol ] };
+
+	key <UP>    { [        Up,   NoSymbol,     uparrow,   0x10021D1 ] };
+	key <LEFT>  { [      Left,   NoSymbol,   leftarrow,   0x10021D0 ] };
+	key <DOWN>  { [      Down,   NoSymbol,   downarrow,   0x10021D3 ] };
+	key <RGHT>  { [     Right,   NoSymbol,  rightarrow,   0x10021D2 ] };
 };
