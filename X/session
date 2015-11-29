@@ -20,10 +20,6 @@ fi
 have nm-applet &&
 	nm-applet &
 
-# GnuPG agent
-have gpg-agent &&
-	eval "$(gpg-agent --daemon --enable-ssh-support)"
-
 # Set background image
 have feh &&
 	feh --bg-fill ~/img/mildstedt.png
@@ -32,4 +28,17 @@ have feh &&
 have redshift &&
 	redshift &
 
-exec i3
+# Pulseaudio
+have pulseaudio &&
+	pulseaudio --start
+
+# Automatic screen lock
+xautolock -locker 'i3lock -d -i ~/img/mildstedt.png' -secure &
+
+# Start i3 as a child of gpg-agent
+if have gpg-agent
+then
+	exec gpg-agent --enable-ssh-support --daemon i3
+else
+	exec i3
+fi
