@@ -22,7 +22,7 @@ have nm-applet &&
 
 # Set background image
 have feh &&
-	feh --bg-fill ~/img/mildstedt.png
+	feh --bg-fill ~/img/trittenheim.jpeg
 
 # redshift
 have redshift &&
