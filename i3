@@ -113,7 +113,7 @@ bindcode Mod4+Shift+26 exit
 bindcode Mod4+Shift+27 restart
 
 # Screen lock
-bindsym XF86Display exec /usr/bin/i3lock -d -i ~/img/mildstedt.png
+bindsym XF86Display exec /usr/bin/i3lock -d -i ~/img/trittenheim.jpeg
 
 # Volume control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +2dB
