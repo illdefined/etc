@@ -122,8 +122,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_00_1b.0.anal
 bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_00_1b.0.analog-stereo toggle
 
 # Brightness
-bindsym XF86MonBrightnessUp exec xbacklight +10
-bindsym XF86MonBrightnessDown exec xbacklight -10
+bindsym XF86MonBrightnessUp exec xbacklight +8
+bindsym XF86MonBrightnessDown exec xbacklight -8
 
 # The IPC interface allows programs like an external workspace bar
 # (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
