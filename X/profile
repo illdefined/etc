@@ -35,10 +35,6 @@ have pulseaudio &&
 # Automatic screen lock
 xautolock -locker 'i3lock -d -i ~/img/mildstedt.png' -secure &
 
-# Start i3 as a child of gpg-agent
-if have gpg-agent
-then
-	exec gpg-agent --enable-ssh-support --daemon i3
-else
-	exec i3
-fi
+# GnuPG agent
+ have gpg-agent &&
+	eval "$(gpg-agent --daemon --enable-ssh-support)"
