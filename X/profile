@@ -36,5 +36,9 @@ have pulseaudio &&
 xautolock -locker 'i3lock -d -i ~/img/mildstedt.png' -secure &
 
 # GnuPG agent
- have gpg-agent &&
-	eval "$(gpg-agent --daemon --enable-ssh-support)"
+if have gpg-agent
+then
+	gpg-agent --daemon --enable-ssh-support
+	gpg-connect-agent updatestartuptty /bye
+	export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+fi
