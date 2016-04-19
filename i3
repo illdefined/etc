@@ -116,10 +116,10 @@ bindcode Mod4+Shift+27 restart
 bindsym XF86Display exec /usr/bin/i3lock -d -i ~/img/trittenheim.jpeg
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +2dB
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo -2dB
-bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle
-bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_00_1b.0.analog-stereo toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2dB
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2dB
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
 
 # Brightness
 bindsym XF86MonBrightnessUp exec xbacklight +8
