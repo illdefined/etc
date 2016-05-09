@@ -44,6 +44,7 @@ battery 0 {
 	format = "ﾠ%statusﾠ%percentage %remaining %consumption "
 	status_chr = "🔌"
 	status_bat = "🔋"
+	status_unk = "🔋"
 	status_full = "🔌"
 }
 
@@ -51,6 +52,7 @@ battery 1 {
 	format = "ﾠ%statusﾠ%percentage %remaining %consumption "
 	status_chr = "🔌"
 	status_bat = "🔋"
+	status_unk = "🔋"
 	status_full = "🔌"
 }
 
