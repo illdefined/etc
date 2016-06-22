@@ -1,0 +1,7 @@
+for run ( /run/user/$UID/gnupg ~/.gnupg ) {
+	local socket="$run/S.gpg-agent.ssh"
+	if [[ -S "$socket" ]] {
+		export SSH_AUTH_SOCK="$socket"
+		break
+	}
+}
