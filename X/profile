@@ -34,11 +34,3 @@ have pulseaudio &&
 
 # Automatic screen lock
 xautolock -locker 'i3lock -d -i ~/img/mildstedt.png' -secure &
-
-# GnuPG agent
-if have gpg-agent
-then
-	gpg-agent --daemon --enable-ssh-support
-	gpg-connect-agent updatestartuptty /bye
-	export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
-fi
