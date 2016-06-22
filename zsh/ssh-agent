@@ -1,3 +1,6 @@
+export GPG_TTY=$(tty)
+gpg-connect-agent /bye
+
 for run ( /run/user/$UID/gnupg ~/.gnupg ) {
 	local socket="$run/S.gpg-agent.ssh"
 	if [[ -S "$socket" ]] {
