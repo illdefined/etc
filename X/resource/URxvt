@@ -1,7 +1,6 @@
-background: black
+depth: 32
+background: [85]black
 foreground: white
-transparent: true
-shading: 30
 jumpScroll: true
 skipScroll: true
 fading: 10
