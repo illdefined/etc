@@ -1,0 +1,135 @@
+set $mod Mod4
+
+font pango:M+ 1mn 10
+
+# $mod+Enter
+bindcode $mod+36 exec /usr/bin/urxvt
+
+# $mod+v
+bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
+
+# Screen lock
+bindsym XF86Display exec /usr/host/bin/swaylock -i ~/img/trittenheim.jpeg -s fill
+
+# Volume control
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2dB
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2dB
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
+
+# Brightness
+bindsym XF86MonBrightnessUp exec xbacklight +8
+bindsym XF86MonBrightnessDown exec xbacklight -8
+
+output * background ~/img/trittenheim.jpeg fill
+
+# change focus
+bindcode $mod+44 focus left
+bindcode $mod+45 focus down
+bindcode $mod+46 focus up
+bindcode $mod+47 focus right
+
+# alternatively, you can use the cursor keys:
+bindcode $mod+113 focus left
+bindcode $mod+116 focus down
+bindcode $mod+111 focus up
+bindcode $mod+114 focus right
+
+# move focused window
+bindcode $mod+Shift+44 move left
+bindcode $mod+Shift+45 move down
+bindcode $mod+Shift+46 move up
+bindcode $mod+Shift+47 move right
+
+# alternatively, you can use the cursor keys:
+bindcode $mod+Shift+113 move left
+bindcode $mod+Shift+116 move down
+bindcode $mod+Shift+111 move up
+bindcode $mod+Shift+114 move right
+
+# split in horizontal orientation
+bindcode $mod+43 split h
+
+# split in vertical orientation
+bindcode $mod+57 split v
+
+# enter fullscreen mode for the focused container
+bindcode $mod+41 fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindcode $mod+39 layout stacking
+bindcode $mod+25 layout tabbed
+bindcode $mod+26 layout toggle split
+
+# toggle tiling / floating
+bindcode $mod+Shift+65 floating toggle
+
+# change focus between tiling / floating windows
+bindcode $mod+65 focus mode_toggle
+
+# focus the parent container
+bindcode $mod+38 focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindcode $mod+10 workspace 1
+bindcode $mod+11 workspace 2
+bindcode $mod+12 workspace 3
+bindcode $mod+13 workspace 4
+bindcode $mod+14 workspace 5
+bindcode $mod+15 workspace 6
+bindcode $mod+16 workspace 7
+bindcode $mod+17 workspace 8
+bindcode $mod+18 workspace 9
+bindcode $mod+19 workspace 10
+
+# move focused container to workspace
+bindcode $mod+Shift+10 move container to workspace 1
+bindcode $mod+Shift+11 move container to workspace 2
+bindcode $mod+Shift+12 move container to workspace 3
+bindcode $mod+Shift+13 move container to workspace 4
+bindcode $mod+Shift+14 move container to workspace 5
+bindcode $mod+Shift+15 move container to workspace 6
+bindcode $mod+Shift+16 move container to workspace 7
+bindcode $mod+Shift+17 move container to workspace 8
+bindcode $mod+Shift+18 move container to workspace 9
+bindcode $mod+Shift+19 move container to workspace 10
+
+# reload the configuration file
+bindcode $mod+Shift+54 reload
+# Mod+Shift+r
+bindcode $mod+Shift+27 restart
+# Mod+Shift+e
+bindcode $mod+Shift+26 exit
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+	# These bindings trigger as soon as you enter the resize mode
+
+	# Pressing left will shrink the window’s width.
+	# Pressing right will grow the window’s width.
+	# Pressing up will shrink the window’s height.
+	# Pressing down will grow the window’s height.
+	bindcode 44 resize shrink width 10 px or 10 ppt
+	bindcode 45 resize grow height 10 px or 10 ppt
+	bindcode 46 resize shrink height 10 px or 10 ppt
+	bindcode 47 resize grow width 10 px or 10 ppt
+
+	# same bindings, but for the arrow keys
+	bindcode 113 resize shrink width 10 px or 10 ppt
+	bindcode 116 resize grow height 10 px or 10 ppt
+	bindcode 111 resize shrink height 10 px or 10 ppt
+	bindcode 114 resize grow width 10 px or 10 ppt
+
+	# back to normal: Enter or Escape
+	bindcode 36 mode "default"
+	bindcode 9 mode "default"
+}
+
+bindcode $mod+27 mode "resize"
+
+bar {
+	status_command i3status
+}
