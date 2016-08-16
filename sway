@@ -17,10 +17,6 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2dB
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
 
-# Brightness
-bindsym XF86MonBrightnessUp exec xbacklight +8
-bindsym XF86MonBrightnessDown exec xbacklight -8
-
 output * background ~/img/trittenheim.jpeg fill
 
 # change focus
@@ -74,6 +70,7 @@ bindcode $mod+38 focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
+bindcode $mod+49 workspace 0
 bindcode $mod+10 workspace 1
 bindcode $mod+11 workspace 2
 bindcode $mod+12 workspace 3
@@ -84,8 +81,11 @@ bindcode $mod+16 workspace 7
 bindcode $mod+17 workspace 8
 bindcode $mod+18 workspace 9
 bindcode $mod+19 workspace 10
+bindcode $mod+20 workspace 11
+bindcode $mod+21 workspace 12
 
 # move focused container to workspace
+bindcode $mod+Shift+49 move container to workspace 0
 bindcode $mod+Shift+10 move container to workspace 1
 bindcode $mod+Shift+11 move container to workspace 2
 bindcode $mod+Shift+12 move container to workspace 3
@@ -96,6 +96,8 @@ bindcode $mod+Shift+16 move container to workspace 7
 bindcode $mod+Shift+17 move container to workspace 8
 bindcode $mod+Shift+18 move container to workspace 9
 bindcode $mod+Shift+19 move container to workspace 10
+bindcode $mod+Shift+20 move container to workspace 11
+bindcode $mod+Shift+21 move container to workspace 12
 
 # reload the configuration file
 bindcode $mod+Shift+54 reload
