@@ -135,3 +135,5 @@ bindcode $mod+27 mode "resize"
 bar {
 	status_command i3status
 }
+
+include /etc/sway/config.d/*
