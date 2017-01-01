@@ -3,7 +3,7 @@ set $mod Mod4
 font pango:M+ 1mn 10
 
 # $mod+Enter
-bindcode $mod+36 exec /usr/bin/urxvt
+bindcode $mod+36 exec /usr/host/bin/urxvt
 
 # $mod+v
 bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
