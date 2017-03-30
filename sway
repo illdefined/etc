@@ -11,6 +11,10 @@ bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
 # Screen lock
 bindsym XF86Display exec /usr/host/bin/swaylock -i ~/img/trittenheim.jpeg -s fill
 
+# Backlight control
+bindsym XF86MonBrightnessDown exec light -U 5
+bindsym XF86MonBrightnessUp exec light -A 5
+
 # Volume control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2dB
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2dB
