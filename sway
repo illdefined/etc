@@ -17,7 +17,7 @@ bindcode $mod+36 exec /usr/host/bin/urxvt
 bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
 
 # Screen lock
-bindsym XF86Display exec /usr/host/bin/swaylock -i ~/img/trittenheim.jpeg -s fill
+bindsym XF86Display exec sudo systemctl start swaylock
 
 # Backlight control
 bindsym XF86MonBrightnessDown exec light -U 5
