@@ -7,6 +7,9 @@ exec find ~/etc/X/resource/ -type f -exec sh -c \
 	'sed -r "s/[ \t]*([A-Za-z0-9_.-]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
 		| xrdb
 
+# Start GnuPG agent
+exec gpg-connect-agent /bye
+
 # $mod+Enter
 bindcode $mod+36 exec /usr/host/bin/urxvt
 
