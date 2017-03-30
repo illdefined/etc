@@ -16,6 +16,12 @@ bindcode $mod+36 exec /usr/host/bin/urxvt
 # $mod+v
 bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
 
+# Launcher
+bindsym XF86LaunchA exec dmenu_run -i -fn "M+ 1MN-10"
+
+# Browser
+bindsym XF86Explorer exec xdg-open https:
+
 # Screen lock
 bindsym XF86Display exec sudo systemctl start swaylock
 
