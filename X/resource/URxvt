@@ -4,7 +4,7 @@ foreground: white
 jumpScroll: true
 skipScroll: true
 fading: 10
-font: xft:M+ 1mn:size=10, xft:Unifont:size=10
+font: xft:M+ 1mn:size=9, xft:EmojiOne Color:size=9, xft:Noto Mono:size=9, xft:Unifont:size=9
 urgentOnBell: true
 scrollBar: false
 scrollTtyOutput: false
