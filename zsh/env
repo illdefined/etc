@@ -1,4 +1,4 @@
-eval "$(dircolors)"
+eval "$(gdircolors)"
 
 export BROWSER="firefox:chromium-browser"
 export EDITOR="vim"
