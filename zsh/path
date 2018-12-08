@@ -1,7 +1,7 @@
 # Construct secure path
 path=(
 	# Only user‐writable directories in user’s home
-	~{/.{cargo,local},}/bin(NoN/U^IW)
+	~{/.{cabal,cargo,local},}/bin(NoN/U^IW)
 
 	# Only root‐writable directories in
 	# - /usr/local
