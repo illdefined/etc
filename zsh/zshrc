@@ -15,7 +15,7 @@ watch=( notme )
 fpath+=( ~/etc/zsh/function )
 
 # Load modules
-for module ( cap files mathfunc system terminfo )
+for module ( mathfunc system terminfo )
 	zmodload zsh/$module
 
 # Load functions
