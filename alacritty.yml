@@ -14,7 +14,8 @@ tabspaces: 4
 
 font:
   normal:
-    family: Input Mono
+    family: Input Mono Narrow
+    style: Light
 
   size: 8.5
 
