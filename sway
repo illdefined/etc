@@ -11,7 +11,7 @@ exec find ~/etc/X/resource/ -type f -exec sh -c \
 exec gpg-connect-agent /bye
 
 # $mod+Enter
-bindcode $mod+36 exec /usr/host/bin/urxvt
+bindcode $mod+36 exec alacritty
 
 # $mod+v
 bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
