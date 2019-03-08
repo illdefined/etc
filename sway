@@ -2,11 +2,6 @@ set $mod Mod4
 
 font pango:M+ 1mn 10
 
-# Process X resources
-exec find ~/etc/X/resource/ -type f -exec sh -c \
-	'sed -r "s/[ \t]*([A-Za-z0-9_.-]+)[ \t]*:/$(basename ''{}'').\1:/" ''{}''' \; \
-		| xrdb
-
 # Start GnuPG agent
 exec gpg-connect-agent /bye
 

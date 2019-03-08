@@ -1,8 +1,0 @@
-antialias: true
-
-hinting: true
-hintstyle: hintfull
-autohint: 0
-
-rgba: rgb
-lcdfilter: lcddefault
