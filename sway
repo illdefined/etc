@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:M+ 1mn 10
+font pango:Lato 10
 
 # Start GnuPG agent
 exec gpg-connect-agent /bye
