@@ -101,8 +101,6 @@ bindcode $mod+16 workspace 7
 bindcode $mod+17 workspace 8
 bindcode $mod+18 workspace 9
 bindcode $mod+19 workspace 10
-bindcode $mod+20 workspace 11
-bindcode $mod+21 workspace 12
 
 # move focused container to workspace
 bindcode $mod+Shift+49 move container to workspace 0
@@ -116,8 +114,10 @@ bindcode $mod+Shift+16 move container to workspace 7
 bindcode $mod+Shift+17 move container to workspace 8
 bindcode $mod+Shift+18 move container to workspace 9
 bindcode $mod+Shift+19 move container to workspace 10
-bindcode $mod+Shift+20 move container to workspace 11
-bindcode $mod+Shift+21 move container to workspace 12
+
+# scratchpad
+bindcode $mod+20 scratchpad show
+bindcode $mod+Shift+20 move scratchpad
 
 # reload the configuration file
 bindcode $mod+Shift+54 reload
