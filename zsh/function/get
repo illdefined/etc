@@ -1,1 +1,1 @@
-command curl --location --remote-name "$@"
+command curl --user-agent "Mozilla/5.0" --location --remote-name "$@"
