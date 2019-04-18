@@ -27,9 +27,6 @@ bindcode $mod+55 exec swaymsg exec "$(bemenu-run -i -p 'Run:' --fn 'Lato 10')"
 # Browser
 bindsym XF86Explorer exec xdg-open https:
 
-# Screen lock
-bindsym XF86Display exec sudo systemctl start swaylock
-
 # Backlight control
 bindsym XF86MonBrightnessDown exec light -U 5
 bindsym XF86MonBrightnessUp exec light -A 5
