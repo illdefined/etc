@@ -154,8 +154,6 @@ mode "resize" {
 
 bindcode $mod+27 mode "resize"
 
-bar {
-	status_command i3status
-}
+exec waybar
 
 include /etc/sway/config.d/*
