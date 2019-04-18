@@ -9,10 +9,7 @@ exec gpg-connect-agent /bye
 bindcode $mod+36 exec alacritty
 
 # $mod+v
-bindcode $mod+55 exec /usr/host/bin/dmenu_run -i -fn "M+ 1MN-10"
-
-# Launcher
-bindsym XF86LaunchA exec dmenu_run -i -fn "M+ 1MN-10"
+bindcode $mod+55 exec swaymsg exec "$(bemenu-run -i -p 'Run:' --fn 'Lato 10')"
 
 # Browser
 bindsym XF86Explorer exec xdg-open https:
