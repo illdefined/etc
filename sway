@@ -10,6 +10,11 @@ exec swayidle \
 	before-sleep 'swaylock -f' \
 	lock 'swaylock -f'
 
+# Notification daemon
+exec mako \
+	--font "Lato 10" \
+	--default-timeout 4000
+
 # Ensure that GnuPG agent is running
 exec_always gpg-connect-agent /bye
 
