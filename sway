@@ -2,8 +2,8 @@ set $mod Mod4
 
 font pango:Lato 10
 
-# Start GnuPG agent
-exec gpg-connect-agent /bye
+# Ensure that GnuPG agent is running
+exec_always gpg-connect-agent /bye
 
 # $mod+Enter
 bindcode $mod+36 exec alacritty
