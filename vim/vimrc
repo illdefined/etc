@@ -25,6 +25,7 @@ let g:rust_recommended_style=0
 " Syntax hilighting
 set t_Co=256
 syntax on
+set background=dark
 colorscheme inkpot
 
 filetype plugin indent on
