@@ -47,3 +47,7 @@ colors:
     white:   '0xffffff'
 
 background_opacity: 0.85
+
+mouse:
+  url:
+    launcher: None
