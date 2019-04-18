@@ -125,6 +125,8 @@ bindcode $mod+Shift+54 reload
 bindcode $mod+Shift+27 restart
 # Mod+Shift+e
 bindcode $mod+Shift+26 exit
+# Mod+Shift+k
+bindcode $mod+Shift+24 kill
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
