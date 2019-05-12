@@ -51,3 +51,6 @@ background_opacity: 0.85
 mouse:
   url:
     launcher: None
+
+selection:
+  save_to_clipboard: true
