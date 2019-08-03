@@ -3,5 +3,5 @@ if [[ -v XDG_RUNTIME_DIR ]] {
 		mkdir -m 0700 "${XDG_RUNTIME_DIR}/tmp"
 	}
 
-	export TMDIR="${XDG_RUNTIME_DIR}/tmp"
+	export TMPDIR="${XDG_RUNTIME_DIR}/tmp"
 }
