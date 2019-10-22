@@ -8,7 +8,6 @@ window:
 scrolling:
   history: 16384
   multiplier: 3
-  faux_multiplier: 3
 
 tabspaces: 4
 
