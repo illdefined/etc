@@ -15,9 +15,6 @@ exec mako \
 	--font "Lato 10" \
 	--default-timeout 4000
 
-# Ensure that GnuPG agent is running
-exec_always gpg-connect-agent /bye
-
 # $mod+Enter
 bindcode $mod+36 exec alacritty
 
