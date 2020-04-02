@@ -9,8 +9,6 @@ scrolling:
   history: 16384
   multiplier: 3
 
-tabspaces: 4
-
 font:
   normal:
     family: Input Mono Narrow
