@@ -1,28 +1,22 @@
-bindkey -v
+bindkey -e
 
 function bindti {
-	bindkey -M "$1" "$terminfo[$2]" "$3"
+	bindkey -- "$terminfo[$1]" "$2"
 }
 
-for map ( viins vicmd ) {
-	# Home and end
-	bindti $map khome vi-beginning-of-line
-	bindti $map kend  vi-end-of-line
+# Home and end
+bindti khome vi-beginning-of-line
+bindti kend  vi-end-of-line
 
-	# Backspace and delete
-	bindti $map kbs   backward-delete-char
-	bindti $map kdch1 vi-delete-char
+# Delete
+bindti $map kbs   backward-delete-char
+bindti $map kdch1 delete-char
 
-	# Enter
-	bindti $map kent  accept-line
+# Enter
+#bindti $map kent  accept-line
 
-	# Arrow keys
-	bindti $map kcub1 vi-backward-char
-	bindti $map kcuf1 vi-forward-char
-	bindti $map kcuu1 up-line-or-history
-	bindti $map kcud1 down-line-or-history
-}
-
-# Mode switch
-bindti vicmd kich1 vi-insert
-bindti viins kich1 vi-cmd-mode
+# Arrow keys
+bindti $map kcub1 backward-char
+bindti $map kcuf1 forward-char
+bindti $map kcuu1 up-line-or-history
+bindti $map kcud1 down-line-or-history
