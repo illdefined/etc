@@ -151,6 +151,9 @@ mode "resize" {
 
 bindcode $mod+27 mode "resize"
 
+input * xkb_layout greedy
+input * xkb_options ctrl:nocaps
+
 exec waybar
 
 include /etc/sway/config.d/*
