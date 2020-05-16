@@ -16,7 +16,7 @@ exec mako \
 	--default-timeout 4000
 
 # $mod+Enter
-bindcode $mod+36 exec alacritty
+bindcode $mod+36 exec kitty
 
 # $mod+v
 bindcode $mod+55 exec swaymsg exec "$(bemenu-run -i -p 'Run:' --fn 'Lato 10')"
