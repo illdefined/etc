@@ -3,7 +3,7 @@ set $mod Mod4
 font pango:Lato 10
 
 # Screen lock
-exec swayidle \
+exec swayidle -w \
 	timeout 300 'swaylock -f' \
 	timeout 600 'swaymsg "output * dpms off"' \
 	resume 'swaymsg "output * dpms on"' \
