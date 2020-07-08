@@ -29,6 +29,7 @@ for script ( ~/etc/zsh/suffix/* )
 source ~/etc/zsh/tmpdir
 source ~/etc/zsh/path
 source ~/etc/zsh/env
+source ~/etc/zsh/timeout
 source ~/etc/zsh/terminal
 source ~/etc/zsh/ssh-agent
 source ~/etc/zsh/complete

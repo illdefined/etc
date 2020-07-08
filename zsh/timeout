@@ -1,0 +1,4 @@
+case "$TTY" {
+	(/dev/pts/*);;
+	(*) export TMOUT="600";;
+}
