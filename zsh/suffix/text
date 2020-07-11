@@ -1,2 +1,0 @@
-for suffix ( c c++ cpp cxx txt )
-	alias -s $suffix="$EDITOR"

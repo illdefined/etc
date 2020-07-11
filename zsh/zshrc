@@ -22,10 +22,6 @@ for module ( mathfunc system terminfo )
 autoload -U zargs zmv
 autoload -U ~/etc/zsh/function/*(:t)
 
-# Set up suffix aliases
-for script ( ~/etc/zsh/suffix/* )
-	source "$script"
-
 source ~/etc/zsh/tmpdir
 source ~/etc/zsh/path
 source ~/etc/zsh/env
