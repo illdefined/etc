@@ -25,8 +25,8 @@ bindcode $mod+55 exec swaymsg exec "$(bemenu-run -i -p 'Run:' --fn 'Lato 10')"
 bindsym XF86Explorer exec xdg-open https:
 
 # Backlight control
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec brightnessctl -e set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl -e set +5%
 
 # Volume control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2dB
