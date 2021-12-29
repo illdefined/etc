@@ -1,0 +1,7 @@
+ignore-empty-password
+image=~/img/downbelow.png
+show-keyboard-layout
+scaling=fill
+color=000000ff
+font=Ubuntu
+font-size=16

@@ -1,0 +1,6 @@
+timeout 210 'brightnessctl --save -e set 20%-' resume 'brightnessctl --restore'
+timeout 240 'swaylock -f'
+timeout 270 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
+before-sleep 'swaylock -f'
+lock 'swaylock -f'
+idlehint 300
