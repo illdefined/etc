@@ -130,16 +130,16 @@ mode "resize" {
 	# Pressing right will grow the window’s width.
 	# Pressing up will shrink the window’s height.
 	# Pressing down will grow the window’s height.
-	bindcode 44 resize shrink width 10ppt
-	bindcode 45 resize grow height 10ppt
-	bindcode 46 resize shrink height 10ppt
-	bindcode 47 resize grow width 10ppt
+	bindcode 44 resize shrink width 5ppt
+	bindcode 45 resize grow height 5ppt
+	bindcode 46 resize shrink height 5ppt
+	bindcode 47 resize grow width 5ppt
 
 	# same bindings, but for the arrow keys
-	bindcode 113 resize shrink width 10ppt
-	bindcode 116 resize grow height 10ppt
-	bindcode 111 resize shrink height 10ppt
-	bindcode 114 resize grow width 10ppt
+	bindcode 113 resize shrink width 5ppt
+	bindcode 116 resize grow height 5ppt
+	bindcode 111 resize shrink height 5ppt
+	bindcode 114 resize grow width 5ppt
 
 	# back to normal: Enter or Escape
 	bindcode 36 mode "default"
