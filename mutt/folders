@@ -1,5 +1,0 @@
-set spoolfile = "+INBOX"
-set postponed = "+Drafts"
-set record = "+Sent"
-
-# vim:ft=muttrc
